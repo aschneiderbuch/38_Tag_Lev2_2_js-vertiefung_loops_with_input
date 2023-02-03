@@ -1,0 +1,37 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+
+
+form {
+    background-color: yellowgreen;
+    width: 40vw;
+    margin: auto ;
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px;
+    padding: 20px;
+    text-align: center;
+
+    box-shadow: 10px 10px 20px yellow;
+
+    article {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 10px 0 10px 0;
+
+        input {
+            padding: 5px;
+            border-radius: 5px;
+            margin-top: 5px;
+
+            &:hover {
+                background-color: aqua;
+            }
+        }
+    }
+}
