@@ -33,9 +33,19 @@ console.log(array.length);
 let input = document.querySelector("#input").value;
 console.log(input);
 
-// input ins array hinzufügen
-array.splice(1,0,`${input}`)
+// loop
+for (rundenIndex = 0; rundenIndex < input.length; rundenIndex = rundenIndex + 1) {
+    console.log("Runden Index: " + rundenIndex);
+
+    // input ins array hinzufügen
+array.splice(1,0,`${input[rundenIndex]}`)
 console.log(array);
+
+}
+
+
+
+
 
 // für output Kommas weg machen
 let arrayString = String(array.join(""));
