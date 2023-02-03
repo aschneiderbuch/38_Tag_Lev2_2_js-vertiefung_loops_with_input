@@ -53,3 +53,40 @@ let output = document.querySelector("#output");
 output.innerHTML = arrayString;
 });
 
+
+
+let buttonOZahl = document.querySelector("#buttonOZahl");
+
+buttonOZahl.addEventListener("click", (event) => {
+    // nicht zurück setzten
+    event.preventDefault();
+
+    // array def und init und befüllen
+let array = ["L","p"];
+//console.log(array);
+//console.log(array.length);
+
+//input holen
+let input = document.querySelector(`#input`).value;
+input = Number(input);
+//console.log(input);
+
+// loop
+for (rundenIndex = 0; rundenIndex < input; rundenIndex = rundenIndex + 1) {
+ //  console.log("Runden Index: " + rundenIndex);
+
+    // input ins array hinzufügen
+array.splice(1,0,`o`)
+//console.log(array);
+
+}
+
+
+// für output Kommas weg machen
+let arrayString = String(array.join(""));
+//console.log(arrayString);
+
+// output in html 
+let output = document.querySelector("#output");
+output.innerHTML = arrayString;
+});
